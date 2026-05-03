@@ -12,7 +12,7 @@ import { loadAllModels } from 'https://cdn.jsdelivr.net/gh/woodle87/sar@main/src
 import { CockpitInterior } from 'https://cdn.jsdelivr.net/gh/woodle87/sar@main/src/cockpitInterior.js';
 
 // ── Login ──
-const PASSWORD = 'THB';
+const PASSWORD = 'car';
 const loginScreen = document.getElementById('login-screen');
 const loginInput = document.getElementById('login-input');
 const loginBtn = document.getElementById('login-btn');
