@@ -1,15 +1,15 @@
 import * as THREE from 'three';
-import { CAMERA, VEHICLE } from './config.js';
-import { input } from './input.js';
-import { updatePhysics } from './physics.js';
-import { Vehicle } from './vehicle.js';
-import { createCity } from './city.js';
-import { CameraController } from './camera.js';
-import { createTraffic, updateTraffic, getAIPositions } from './traffic.js';
-import { updateHUD } from './hud.js';
-import { createLighting, updateDayNight, toggleTimeSpeed } from './daynight.js';
-import { loadAllModels } from './models.js';
-import { CockpitInterior } from './cockpitInterior.js';
+import { CAMERA, VEHICLE } from 'https://cdn.jsdelivr.net/gh/woodle87/sar@main/src/config.js';
+import { input } from 'https://cdn.jsdelivr.net/gh/woodle87/sar@main/src/input.js';
+import { updatePhysics } from 'https://cdn.jsdelivr.net/gh/woodle87/sar@main/src/physics.js';
+import { Vehicle } from 'https://cdn.jsdelivr.net/gh/woodle87/sar@main/src/vehicle.js';
+import { createCity } from 'https://cdn.jsdelivr.net/gh/woodle87/sar@main/src/city.js';
+import { CameraController } from 'https://cdn.jsdelivr.net/gh/woodle87/sar@main/src/camera.js';
+import { createTraffic, updateTraffic, getAIPositions } from 'https://cdn.jsdelivr.net/gh/woodle87/sar@main/src/traffic.js';
+import { updateHUD } from 'https://cdn.jsdelivr.net/gh/woodle87/sar@main/src/hud.js';
+import { createLighting, updateDayNight, toggleTimeSpeed } from 'https://cdn.jsdelivr.net/gh/woodle87/sar@main/src/daynight.js';
+import { loadAllModels } from 'https://cdn.jsdelivr.net/gh/woodle87/sar@main/src/models.js';
+import { CockpitInterior } from 'https://cdn.jsdelivr.net/gh/woodle87/sar@main/src/cockpitInterior.js';
 
 // ── Login ──
 const PASSWORD = 'THB';
