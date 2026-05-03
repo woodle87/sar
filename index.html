@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Driving Simulator</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <!-- Login Screen -->
+  <div id="login-screen">
+    <div id="login-box">
+      <h1 id="login-title">DRIVING SIMULATOR</h1>
+      <p id="login-subtitle">Enter password to play</p>
+      <input type="password" id="login-input" placeholder="Password" autocomplete="off" />
+      <button id="login-btn">START</button>
+      <p id="login-error"></p>
+    </div>
+  </div>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen" style="display:none;">
+    <div id="loading-box">
+      <h1 id="loading-title">LOADING</h1>
+      <p id="loading-subtitle">Loading 3D models...</p>
+      <div id="loading-spinner"></div>
+    </div>
+  </div>
+
+  <div id="game-container" style="display:none;"></div>
+
+  <!-- HUD Overlay -->
+  <div id="hud" style="display:none;">
+    <!-- Speedometer -->
+    <div id="speedo">
+      <div id="speedo-value">0</div>
+      <div id="speedo-unit">km/h</div>
+    </div>
+
+    <!-- Gear & RPM -->
+    <div id="gear-panel">
+      <div id="gear-label">GEAR</div>
+      <div id="gear-value">1</div>
+      <div id="rpm-bar-container">
+        <div id="rpm-bar"></div>
+      </div>
+      <div id="rpm-label">RPM</div>
+    </div>
+
+    <!-- Minimap -->
+    <div id="minimap-container">
+      <canvas id="minimap" width="180" height="180"></canvas>
+    </div>
+
+    <!-- Controls hint -->
+    <div id="controls-hint">
+      ⌘+A: Forward &nbsp;|&nbsp; ⌥+8: Left &nbsp;|&nbsp; ⌥+7: Right &nbsp;|&nbsp; S: Reverse &nbsp;|&nbsp; Space: Brake &nbsp;|&nbsp; C: Camera &nbsp;|&nbsp; R: Reset
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
